@@ -1,0 +1,55 @@
+:root{
+    --green: #138803;
+    --white: rgb(239, 245, 235);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media (max-width: 480px) {
+    marquee{
+        background-color: var(--green);
+        color: var(--white)
+    }
+    marquee h4{
+        font-size: large;
+        letter-spacing: 0.65rem;
+    }
+    header{
+        height: auto;
+        width: 100%;
+        /* padding: 15px; */
+    }
+    header > nav{
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+    }
+    nav .logo{
+        height: 200px;
+        width: 200px;
+    }
+    .logo img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+}
+/* header{
+    height: auto;
+    padding: 0 50px 10px;
+}
+main{
+   /*  background-image: url(../assets/bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+} */
