@@ -19,6 +19,9 @@ body{
         font-size: large;
         letter-spacing: 0.65rem;
     }
+marque span{
+line-spacing: normal;
+}
     header{
         height: auto;
         width: 100%;
