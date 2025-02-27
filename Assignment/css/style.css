@@ -1,0 +1,125 @@
+:root{
+    --green: #138803;
+    --white: rgb(239, 245, 235);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media (max-width: 480px) {
+    marquee{
+        background-color: var(--green);
+        color: var(--white);
+        z-index: 1;
+    }
+    marquee h4{
+        font-size: large;
+        letter-spacing: 0.65rem;
+    }
+    marquee span{
+        letter-spacing: normal;
+    }
+    marquee a{
+        text-decoration: none;
+        color: snow;
+    }
+    marquee a:hover{
+        font-variant: small-caps;
+        transition: ease-in-out, 0.3s;
+    }
+
+    header{
+        /* margin-top: 100px; */
+        height: auto;
+        width: 100%;
+        /* padding: 15px; */
+    }
+    header > nav{
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+    }
+    nav .logo{
+        height: 200px;
+        width: 200px;
+    }
+    .logo img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    main{
+        margin: 0 15px;
+    }
+    main h1{
+        text-align: center;
+        margin-top: 0;
+    }
+
+    /* Styling the form section */
+    form{
+        padding: 10px 0;
+        position: relative;
+    }
+    form::after{
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: url(../assets/logo2.jpg) center/auto no-repeat;
+        filter: blur(5px);
+        z-index: -1;
+    }
+
+    form *{
+        margin: 10px 0;
+    }
+    input[type="text"], [type="email"], select, textarea{
+        height: 45px;
+        width: 90%;
+        padding: 10px;
+        border: 2px solid var(--green);
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.856);
+    }
+    input:hover{
+        transition: 1s ease-in-out;
+        transform-box: stroke-box;
+    }
+    textarea{
+        height: 20ch;
+    }
+    ::placeholder, :optional, option{
+        font-family: monospace;
+        font-size: 15px;
+    }
+    :optional{
+        padding-right: 15px;
+    }
+
+    input[type="submit"]{
+        margin-top: 0;
+        padding: 10px;
+        width: 45%;
+        background-color: var(--green);
+        border: 2px solid var(--white);
+        border-radius: 10px;
+        color: var(--white);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    input[type="submit"]:hover{
+        transition: 0.5s ease-in-out;
+        border: 2px solid var(--green);
+        background-color: var(--white);
+        color: var(--green);
+        font-variant: small-caps;
+        letter-spacing: 0.2rem;
+    }
+}
+
+/* Styling the Desktop View */
